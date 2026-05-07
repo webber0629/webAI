@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Game Studio | 團隊辦公室</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="studio-shell">
+      <section class="hero-panel" aria-label="AI Game Studio entrance">
+        <div class="sky sky-one"></div>
+        <div class="sky sky-two"></div>
+        <div class="canopy canopy-left"></div>
+        <div class="canopy canopy-right"></div>
+        <div class="waterfall"></div>
+        <div class="water"></div>
+        <div class="spark spark-one"></div>
+        <div class="spark spark-two"></div>
+        <div class="spark spark-three"></div>
+        <div class="spark spark-four"></div>
+        <div class="beacon"></div>
+        <div class="block-platform platform-main"></div>
+        <div class="block-platform platform-left"></div>
+        <div class="block-platform platform-right"></div>
+        <div class="tree tree-left"><span></span></div>
+        <div class="tree tree-right"><span></span></div>
+
+        <aside class="plan-board floating-card">
+          <p class="eyebrow">TODAY'S PLAN</p>
+          <ul>
+            <li><span class="check idea"></span>IDEA</li>
+            <li><span class="check design"></span>DESIGN</li>
+            <li><span class="check develop"></span>DEVELOP</li>
+            <li><span class="check test"></span>TEST</li>
+            <li><span class="check deploy"></span>DEPLOY</li>
+          </ul>
+        </aside>
+
+        <section class="studio-house" aria-label="Main studio building">
+          <div class="roof-sign">
+            <span class="sword">◆</span>
+            <div>
+              <h1>AI GAME STUDIO</h1>
+              <p>團隊辦公室</p>
+            </div>
+            <span class="sword">◆</span>
+          </div>
+
+          <div class="house-window window-left"></div>
+          <div class="house-window window-right"></div>
+          <div class="bookshelf"></div>
+          <div class="desk">
+            <div class="monitor"></div>
+            <div class="paper-stack"></div>
+          </div>
+          <div class="lantern lantern-left"></div>
+          <div class="lantern lantern-right"></div>
+        </section>
+
+        <button class="hotspot producer" type="button" data-title="Product Owner" data-detail="總覽週目標、專案風險與待決策事項。">
+          <span class="avatar avatar-producer"></span>
+          <span class="label"><strong>Product Owner</strong><small>產品負責人</small></span>
+        </button>
+
+        <button class="hotspot kevin" type="button" data-title="KEVIN" data-detail="STK 團隊負責人，查看團隊方向、每週重點與跨專案決策。">
+          <span class="avatar avatar-kevin"></span>
+          <span class="label"><strong>KEVIN</strong><small>STK 團隊負責人</small></span>
+        </button>
+
+        <button class="hotspot planner" type="button" data-title="企劃 AI 助手" data-detail="未來可串接 NotebookLM，查規格、比較玩法、產生新企劃。">
+          <span class="avatar avatar-planner"></span>
+          <span class="label"><strong>企劃</strong><small>Game Planner</small></span>
+        </button>
+
+        <button class="hotspot artist" type="button" data-title="美術 AI 工具室" data-detail="未來可快速產生節慶背景、活動主視覺與素材 prompt。">
+          <span class="avatar avatar-artist"></span>
+          <span class="label"><strong>美術</strong><small>Artist</small></span>
+        </button>
+
+        <button class="hotspot developer" type="button" data-title="程式工具台" data-detail="未來放 API 文件、工具串接狀態與 prototype build。">
+          <span class="avatar avatar-developer"></span>
+          <span class="label"><strong>程式</strong><small>Developer</small></span>
+        </button>
+
+        <button class="hotspot qa" type="button" data-title="測試中心" data-detail="未來放測試案例、bug 回報與 QA checklist。">
+          <span class="avatar avatar-qa"></span>
+          <span class="label"><strong>測試</strong><small>QA Tester</small></span>
+        </button>
+
+        <button class="object-hotspot whiteboard" type="button" data-title="專案白板" data-detail="各 project 每週目標、負責人、進度與風險。">
+          <span>Weekly Goals</span>
+        </button>
+
+        <button class="object-hotspot newspaper" type="button" data-title="桌上的報紙" data-detail="每週自動整理 iGaming 新聞與競品情報。">
+          <span class="paper-title">iGaming News</span>
+          <span class="paper-fold"></span>
+          <span class="paper-lines"></span>
+        </button>
+
+        <button class="hotspot math-lab" type="button" data-title="數學實驗台" data-detail="未來可調整 bonus prototype 機率，查看 RTP、hit rate 與波動。">
+          <span class="avatar avatar-math"></span>
+          <span class="label"><strong>數學</strong><small>Math Lab</small></span>
+        </button>
+
+        <div class="stone-path"></div>
+        <div class="ore-block ore-one"></div>
+        <div class="ore-block ore-two"></div>
+        <div class="grass grass-one"></div>
+        <div class="grass grass-two"></div>
+        <div class="flower flower-one"></div>
+        <div class="flower flower-two"></div>
+      </section>
+
+      <aside class="info-panel">
+        <p class="eyebrow">PORTAL PREVIEW</p>
+        <h2 id="panel-title">選擇一個入口</h2>
+        <p id="panel-detail">
+          這裡先建立最外層外觀。點擊角色或物件，可以預覽未來要接的功能方向。
+        </p>
+        <div class="module-list">
+          <span>AI 美術</span>
+          <span>企劃知識庫</span>
+          <span>數學模擬</span>
+          <span>每週目標</span>
+          <span>產業新聞</span>
+        </div>
+      </aside>
+    </main>
+
+    <div class="news-modal" id="news-modal" aria-hidden="true">
+      <div class="news-modal__backdrop" data-close-news="true"></div>
+      <section class="news-modal__dialog" aria-labelledby="news-title" aria-modal="true" role="dialog">
+        <button class="news-modal__close" id="news-close" type="button" aria-label="Close weekly report">
+          X
+        </button>
+        <p class="news-modal__eyebrow">WEEKLY iGAMING REPORT</p>
+        <h2 id="news-title">本周熱門情報</h2>
+        <article class="news-card news-card--headline">
+          <p class="news-rank">TOP 1</p>
+          <h3>JDB 財神捕魚</h3>
+          <p>
+            本周熱度第一，兼具高辨識度題材與強烈節慶吸引力，適合作為魚機視覺與活動玩法參考。
+          </p>
+        </article>
+        <div class="news-grid">
+          <article class="news-card">
+            <p class="news-tag">關注點</p>
+            <p>財神題材在華人市場仍有穩定吸引力，捕魚玩法又能拉高即時刺激感。</p>
+          </article>
+          <article class="news-card">
+            <p class="news-tag">可借鏡</p>
+            <p>可延伸成春節活動主題、限定炮台皮膚、神獸 Boss 與彩金掉落演出。</p>
+          </article>
+          <article class="news-card">
+            <p class="news-tag">團隊建議</p>
+            <p>美術先收斂「金紅財神 + 海底寶藏」方向，企劃同步整理節慶版 feature 草案。</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
